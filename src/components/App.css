@@ -1,0 +1,101 @@
+
+body {
+  margin: 0; 
+}
+
+.nav {
+  display: flex;
+  justify-content: center; /* Align links to the right */
+  gap: 30px; /* Add space between nav items */
+  margin-right: 4rem;
+}
+
+.nav a {
+  display: flex;
+  font-family: 'Arial', 'Helvetica', sans-serif;
+  font-weight: bold;
+  font-size: medium;
+  color: #0b1335;
+  transition: transform 0.1s ease;
+}
+
+nav a:hover {
+  color: black;
+  transform: scale(0.9);
+}
+
+.info{
+  height: 3rem;
+  background-color: #0b1335;
+}
+
+.info ul li{
+  list-style: none;
+  display: inline;
+  gap: 4rem;
+}
+
+
+.section-heading h2 {
+  color: black;
+  font-family: 'monospace';
+}
+
+.happy-clients {
+  margin-bottom: 40px;
+  width: 100vw;  /* Full screen width */
+  overflow: hidden;  /* Hide overflow */
+}
+
+.happy-clients .client-item img {
+  max-width: 100%;
+  overflow: hidden;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.happy-clients .client-item img:hover {
+  opacity: 0.8;
+}
+
+.col-md-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.owl-clients {
+  display: flex;
+  width: max-content;  /* Allow for content to be wider than its container */
+}
+
+.owl-clients .client-item {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.owl-clients .client-item img {
+  width: 100px;  /* You can adjust the size of the logos */
+  height: auto;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.owl-carousel {
+  display: flex;
+  animation: slide 20s linear infinite;  /* Adjust speed and direction */
+  width: max-content;  /* Ensure the content can overflow */
+}
+
+
+
+
+
+
+
